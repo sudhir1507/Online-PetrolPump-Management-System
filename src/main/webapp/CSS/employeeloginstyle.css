@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+.container{
+	width:800px;
+	height: 500px;
+	background-color: #2f2f2f;
+	position: relative;
+	left:300px;
+	top:50px;
+	border-radius: 10px;
+}
+.subcontainer{
+	list-style-type: none;
+	position: absolute;
+	left:150px;
+	top:100px;
+	width: 500px;
+	background-color: gray;
+	padding: 20px;
+	border-radius: 20px;
+}
+.subcontainer li{
+	padding: 10px;
+}
+ul{
+	list-style-type: none;
+	width: 100%;
+	background-color: black;
+	padding: 10px;
+	
+}
+ul li{
+	display: inline;
+	padding: 10px;
+	
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+}
+

@@ -15,5 +15,40 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public List<EmployeeModel> getAllEmployees() {
 		return empRepo.getAllEmployees();
 	}
+	@Override
+	public boolean allocateMachine(int eid, int mid, String ...x) {
+		
+		return empRepo.allocateMachine(eid, mid, x);
+	}
+	@Override
+	public boolean deleteEmployeeById(int eid) {
+		
+		return empRepo.deleteEmployeeById(eid);
+	}
+	@Override
+	public boolean updateEmployeeById(EmployeeModel model) {
+		
+		return empRepo.updateEmployeeById(model);
+	}
+	@Override
+	public int verifyEmployee(String email, String contact) {
+		
+		return empRepo.verifyEmployee(email,contact);
+	}
+	@Override
+	public EmployeeModel getProfile(int employeeId) {
+		
+		return empRepo.getProfile(employeeId);
+	}
+	@Override
+	public boolean updateprofile(EmployeeModel model) {
+		
+		return empRepo.updateprofile(model);
+	}
+	@Override
+	public List<Object[]> viewAllocatedMachies(int employeeId) {
+		
+		return empRepo.viewAllocatedMachies(employeeId);
+	}
 
 }

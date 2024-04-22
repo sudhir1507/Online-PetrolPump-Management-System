@@ -61,7 +61,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                   <%-- <li>
                         <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
@@ -73,7 +73,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                     <li>
                         <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
@@ -91,13 +91,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                    </li>
+                    --%>
                 </ul>
                 <hr>
-                <div class="dropdown pb-4">
+                <%--<div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
                         <span class="d-none d-sm-inline mx-1">Admin</span>
@@ -112,6 +109,7 @@
                         <li><a class="dropdown-item" href="#">Sign out</a></li>
                     </ul>
                 </div>
+                --%>
             </div>
         </div>
         

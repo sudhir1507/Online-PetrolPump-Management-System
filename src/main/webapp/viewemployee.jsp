@@ -29,7 +29,23 @@
 				</tr>
 			</thead>
 			<tbody>
-				
+				<%
+				EmployeeService empService=new EmployeeServiceImpl();
+				List<EmployeeModel> list=empService.getAllEmployees();
+				int count=0;
+				for(EmployeeModel eModel:list){
+				%>
+				 <tr>
+				 <td><%=++count %></td>
+				 <td><%=eModel.getName() %></td>
+				 <td><%=eModel.getContact() %></td>
+				 <td><a href='allocatemachine?empid=<%=eModel.getId()%>&empName=<%=eModel.getName()%>'>ALLOCATE MACHINE</a></td>
+				 <td><a href='deleteemployee?empid=<%=eModel.getId()%>'><img src="images/Trash.webp" alt="delete icon" width="30" height="30" class="rounded-circle"></a></td>
+				 <td><a href='updateemployee?empid=<%=eModel.getId()%>&empName=<%=eModel.getName()%>&empEmail=<%=eModel.getEmail()%>&empContact=<%=eModel.getContact()%>&empAddress=<%=eModel.getAddress()%>&empSalary=<%=eModel.getSal()%>'><img src="images/edit.webp" alt="update icon" width="30" height="30" class="rounded-circle"></a></td>
+				 </tr>
+				<%
+				}
+				%>
 			</tbody>
 		</table>
 
